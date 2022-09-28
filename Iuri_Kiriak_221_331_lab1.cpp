@@ -1,7 +1,10 @@
 #include<iostream>
 #include<limits.h>
 #include<bitset>
-using namespace std;
+
+using  std::endl;
+using  std::cout;
+using  std::cin;
 int main()
 {
 	
@@ -14,13 +17,13 @@ int main()
 
 	cout << "\t\t\t\t\t\t\t¹2\n\n";
 
-	cout << "\t\t\tint min: " << INT_MIN << " , int max: " << INT_MAX <<" , size of int: " << sizeof(int) <<endl;
+	cout << "\t\t\tint min: " << int(0b10000000000000000000000000000000) << " , int max: " << unsigned(0b11111111111111111111111111111111) <<" , size of int: " << sizeof(int) <<endl;
 	
 	unsigned int a1;
 
-	cout << "\t\t\tmin unsigned int: -" << " , max unsigned int: " << UINT_MAX << " , size of unsigned int: " << sizeof(a1) <<endl;
+	cout << "\t\t\tmin unsigned int: -" << unsigned(0b0000000000000000) << " , max unsigned int: " << unsigned(0b1111111111111111) << " , size of unsigned int: " << sizeof(a1) <<endl;
 
-	cout << "\t\t\tmin short: " << SHRT_MIN << " , max short: " << SHRT_MAX << " , size of short: " << sizeof(short) << endl;
+	cout << "\t\t\tmin short: " << short(0b1000000000000000) << " , max short: " << short(0b0111111111111111) << " , size of short: " << sizeof(short) << endl;
 
 	unsigned short b1;
 	cout << "\t\t\tmin unsigned short: -" << " , max unsigned short: " << USHRT_MAX << " , size of short: " << sizeof(b1) << endl;
