@@ -28,7 +28,7 @@ void task_2()
 	{
 		C = C * (n - k);
 		C = C / (k + 1);
-		std::cout << C << endl;
+		cout << C << endl;
 	}
 }
 
@@ -42,8 +42,6 @@ int task_3()
 		cout << "enter number " << number++ <<" = "; 
 		cin >> a;
 		c = c + a;
-
-		
 
 		if (a == 0)
 		{
