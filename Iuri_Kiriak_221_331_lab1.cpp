@@ -2,9 +2,11 @@
 #include<limits.h>
 #include<bitset>
 
-using  std::endl;
-using  std::cout;
-using  std::cin;
+using std::endl;
+using std::cout;
+using std::cin;
+using std::bitset;
+using std::hex;
 int main()
 {
 	
