@@ -22,33 +22,34 @@ void task_1()
 
 void task_2()
 {
-	int C = 1 , n;
+	int  n;
+	double C = 1;
 	cin >> n;
-	for (int k = 0; k < n; k++)
+	for (int k = 0; k < n; ++k)
 	{
-		C = C * (n - k);
-		C = C / (k + 1);
-		cout << C << endl;
+		C *= (n - k);
+		C /= (k + 1);
+		cout << C << " ";
 	}
 }
 
 int task_3()
 {
 
-	int a, b, c = 0, number = 1;
+	int number = 0;
+	double ver ,b, sum = 0;
+
 	while (1)
 	{
-		
-		cout << "enter number " << number++ <<" = "; 
-		cin >> a;
-		c = c + a;
+		cout << "enter number " << ++number <<" = "; 
+		cin >> ver;
+		sum += ver;
 
-		if (a == 0)
+		if (ver == 0)
 		{
-			number = number - 2;
-			b = c / number;
-			cout <<"calculate: " << b << endl;
-			return b;
+			--number;
+			cout <<"calculate: " << sum / number << endl;
+			return sum / number;
 		}
 	}
 	
